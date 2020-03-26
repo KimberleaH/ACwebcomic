@@ -82,6 +82,12 @@ main {
     background-color: black;
 }
 
+#socials img {
+    height: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 #navbar {
     background-color: black;
 }
