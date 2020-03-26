@@ -16,7 +16,7 @@ body {
    rgba(0, 0, 0, 0.5),
    rgba(0, 0, 0, 0.1)
    ) ,
-    url(resources/images/Free-Simple-Black-Seamless-Pattern-for-Website-Background[1].jpg);
+    url("../resources/images/Free-Simple-Black-Seamless-Pattern-for-Website-Background[1].jpg");
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    background-image: url('/resources/images/Aranite.png');
+    background-image: url("../resources/images/Aranite.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
