@@ -45,7 +45,7 @@ body {
 }
 
 header {
-    background-image: url('https://cdna.artstation.com/p/assets/images/images/015/794/934/large/kimberlea-heili-aranite-lowrez.jpg');
+    /* Background image code in html */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -142,8 +142,6 @@ main {
     margin-top: 40px;
     color: white;
 }
-
-
 
 footer {
     color: white;
