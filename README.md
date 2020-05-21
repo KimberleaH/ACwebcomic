@@ -14,11 +14,11 @@ The purpose of this website is to act as an info hub for the webcomic series, An
 Ancient Chronicles © 2007-2020 Kimberlea Heili and Samuel Page
 
 ## Artwork
-Header, Ancient Chronicles logo, "Featured Article" banner artwork are authored by Kimberlea Heili. (https://kimberleaheili.com)
+Header, Ancient Chronicles logo, "Featured Lore" banner artwork are authored by Kimberlea Heili. (https://kimberleaheili.com)
 
 Ko-Fi button was provided by https://Ko-Fi.com
 
-"Featured Article" buttons originated from https://www.worldanvil.com/w/ancient-chronicles
+"Featured Lore" buttons originated from https://www.worldanvil.com/w/ancient-chronicles
 
 
 ## Features
