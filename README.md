@@ -35,4 +35,4 @@ This project was created with:
 * HTML5
 * CSS3
 * Photoshop (image content and web design layout mockup)
-*Javascript (buttons)
+* Javascript (buttons)
