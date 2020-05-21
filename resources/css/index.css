@@ -8,6 +8,7 @@
 
 body {
     font-family: "Akrobat", "Calibri", sans-serif;
+    font-size: 16px;
     text-align: center;
     
     /* This is the dark gradient over the BG */
@@ -22,26 +23,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     max-width: inherit;
-}    
-
-#logo_bar {
-    background: rgba(0, 0, 0, 0.5); 
-    margin-bottom: 300px;
-}
-
-#logo {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#start_reading {
-    font-size: 36px;
-    padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5);  /* Border transparency */
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 60px;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -49,6 +30,33 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* Transparent black bar at top */
+#logo_bar {
+    background: rgba(0, 0, 0, 0.5); 
+    margin-bottom: 140px;
+}
+
+#logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+#read_ACwebcomic {
+    font-size: 36px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);  /* Border transparency */
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 170px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -60,11 +68,13 @@ nav {
     list-style-type: none;
     display: inline-flex;
     margin: 0 auto;
+    padding: 8px 0;
+    align-items: center;
 }
 
 nav a {
     font-weight: bolder;
-    padding: 8px 16px 8px 16px;
+    padding: 0 16px;
     font-size: 20px;
 }
 
@@ -73,8 +83,8 @@ nav a:hover {
 }
 
 main {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: auto;
 }
 
 #socials {
@@ -84,8 +94,7 @@ main {
 
 #socials img {
     height: 20px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding: 0 4px;
 }
 
 #navbar {
@@ -107,6 +116,7 @@ main {
 
 #latest p {
     color: slategray;
+    font-size: 20px;
 }
 
 #kofi {
@@ -116,10 +126,9 @@ main {
 }
 
 #news {
-    margin: 0 auto;
     color: silver;
-    margin-bottom: 60px;
-    margin-top: 60px;
+    margin: auto;
+    margin: 60px 15px;
 }
 
 #news h3 {
@@ -141,6 +150,16 @@ main {
 #featured {
     margin-top: 40px;
     color: white;
+}
+
+#flex-lore {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#flex-lore img {
+    height: 150px;
 }
 
 footer {

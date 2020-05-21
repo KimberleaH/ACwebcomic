@@ -3,8 +3,24 @@
 <html>
   <head>
     <title>Ancient Chronicles | Home</title>
-
+    <!-- CSS link -->
     <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+    
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ancient Chronicles science fiction fantasy webcomic epic">
+    <meta name="authors" content="Kimberlea Heili, Samuel Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="comic, webcomic, ACwebcomic, acwebcomic,
+      web comic, ancient chronicles, Ancient Chronicles, graphic novel,
+      science fiction, fantasy, sci fi, science fantasy, sci fantasy, story,
+      epic, read, online, series, webseries, web series, Kimberlea Heili,
+      Samuel Page, Whisperspirit, whisper, whisperspirit, whisper, Creator,
+      Chaos, Order, LGBT, lgbt, world, worldbuilding, world building, world build">
+    <meta name="creatures" content="sefora, shyr, quilan, ethiean, asiran, vesan,
+      amzor, seyrin, vezdra, kartuu, pateru, kyril, shyrven, miltiades, Miltiades">
+    <meta name="planets" content="Serpentis, serpentis, Ethiea, ethiea, Asira, asira,
+      Xilxixian, xilxixian, Gaelistor, gaelistor, Beross, beross, Soros, soros">
   </head>
 
   <body>
@@ -12,36 +28,32 @@
       <!-- This is the transparent black bar under the Ancient Chronicles logo -->
       <div id="logo_bar">
         <!-- This is the actual logo -->
-        <img id="logo" src="resources/images/AC_Logo_NoGradient.png" height="60px">
+        <div id="logo" style="background-image: url(resources/images/AC_Logo_NoGradient.png);"></div>
       </div>
      
       <!-- "Start Reading" button -->
-      <h2 id="start_reading"><a href="https://tapas.io/series/Ancient-Chronicles-Soulstones" target="_blank">Start Reading</a></h2>
-
-      <!-- Credit to the placehold work. This will need to go away later.
-      <p align="left"><a href="https://www.artstation.com/artwork/bORra"><small>Placeholder art by William Wu</small></a></p> -->
-
+      <h1 id="read_ACwebcomic"><a href="https://tapas.io/series/Ancient-Chronicles-Soulstones" target="_blank">Start Reading</a></h1>
 
       <!-- Navigation Bar includes Home, Creators, Archive, Donate, Lore, and Shop. Shop is commented out. -->
       <section id="navbar">
         <nav>
-          <a href="index.html">Home</a>
-          <a href="creators.html">Creators</a>
-          <a href="https://ko-fi.com/kimberleaheili" target="_blank">Donate</a>
-          <a href="https://worldanvil.com/w/ancient-chronicles" target="_blank">Lore</a>
-          <!-- <a href="https://etsy.com" target="_blank" id="shop">Shop</a> -->
+          <span><a href="index.html">Home</a></span>
+          <span><a href="creators.html">Creators</a></span>
+          <span><a href="https://ko-fi.com/kimberleaheili" target="_blank">Donate</a></span>
+          <span><a href="https://worldanvil.com/w/ancient-chronicles" target="_blank">Lore</a></span>
+          <!-- <a href="https://etsy.com" target="_blank" id="shop">Shop</a></span> -->
         </nav>
 
         <!-- Social icons -->
-        <section id="socials">
+        <section id="socials" >
           <!-- ACwebcomic instagram -->
-          <a href="https://www.instagram.com/acwebcomic/" target="_blank"><img src="resources/images/insta_icon.png"></a>
+          <a href="https://www.instagram.com/acwebcomic/" target="_blank"><img src="resources/images/insta_icon.png" onmousedown="return false;"></a>
           <!-- Intentionally does not link to official ACwebcomic Discord server -->
-          <a href="https://discordapp.com/" target="_blank"><img src="resources/images/discord_icon.png"></a> 
+          <a href="https://discordapp.com/" target="_blank"><img src="resources/images/discord_icon.png" onmousedown="return false;"></a> 
           <!-- ACwebcomic facebook -->
-          <a href="https://www.facebook.com/ACwebcomic/" target="_blank"><img src="resources/images/facebook_icon.png"></a>
+          <a href="https://www.facebook.com/ACwebcomic/" target="_blank"><img src="resources/images/facebook_icon.png" onmousedown="return false;"></a>
           <!-- ACwebcomic twitter -->
-          <a href="https://twitter.com/acwebcomic" target="_blank"><img src="resources/images/twitter_icon.png"></a>
+          <a href="https://twitter.com/acwebcomic" target="_blank"><img src="resources/images/twitter_icon.png" onmousedown="return false;"></a>
         </section>
   </section>
     </header>
@@ -49,16 +61,16 @@
     <main>
       <!-- Latest update bit -->
       <section id="latest">
-        <h3 id="latest_button"><a href="https://tapas.io/episode/1436472" target="_blank">Latest Update</a></h3> <!-- Update link here -->
-        <h5>Saturdays @ 12pm Central</h5>
+        <h2 id="latest_button"><a href="https://tapas.io/episode/1436472" target="_blank">Latest Update</a></h2> <!-- Update link here -->
+        <h4>Saturdays @ 12pm Central</h4>
         <p><em><small>This comic contains adult themes and content that may<br>
           not be suitable for everyone. Viewer discretion is advised.</small></em></p>
       </section>
       
       <!-- Ko-fi button -->
       <section id="kofi">
-        <figcaption><small>Keep the Story Going!</small></figcaption>
-        <a href="https://ko-fi.com/kimberleaheili" target="_blank"><img src="resources/images/Ancient_chronicles_Kofi_Button.PNG" height="40px"></a>
+        <!-- Button source code from Ko-Fi.com -->
+        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Keep the Story Going!', '#29abe0', 'A8871181');kofiwidget2.draw();</script> 
       </section>
 
       <!-- News section -->
@@ -104,10 +116,10 @@
 
       <!-- Featured articles go here -->
       <section id="featured">
-        <h3>Featured Articles</h3>
-        <div id="flex-articles">
-          <a href="https://www.worldanvil.com/w/ancient-chronicles/a/communication-unit-article" target="_blank"><img src="resources/images/Snip.PNG" height="150px"></a>
-          <a href="https://www.worldanvil.com/w/ancient-chronicles/a/broken-sword-tavern" target="_blank"><img src="resources/images/snip_02.PNG" height="150px"></a>
+        <h3>Featured Lore</h3>
+        <div id="flex-lore">
+          <a href="https://www.worldanvil.com/w/ancient-chronicles/a/communication-unit-article" target="_blank"><img src="resources/images/Snip.PNG" onmousedown="return false;"></a>
+          <a href="https://www.worldanvil.com/w/ancient-chronicles/a/broken-sword-tavern" target="_blank"><img src="resources/images/snip_02.PNG" onmousedown="return false;"></a>
         </div>
       </section>
     </main>
