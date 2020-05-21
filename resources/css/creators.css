@@ -6,6 +6,11 @@
         url('/resources/fonts/Akrobat/Akrobat-Regular.ttf');
     }
 
+html {
+    width: 100%;
+    background-color: black;
+}
+
 body {
     font-family: "Akrobat", "Calibri", sans-serif;
     font-size: 16px;
