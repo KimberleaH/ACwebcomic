@@ -142,3 +142,20 @@ footer {
     color: white;
     opacity: 0.4;
 }
+
+@media screen and (max-height: 420px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2) {
+
+  html,
+  body{
+    width:100%;
+    overflow-x: hidden;
+  }
+}
