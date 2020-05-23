@@ -1,5 +1,5 @@
 @font-face { /* Akrobat font */
-    font-family: 'Akrobat';
+    font-family: Akrobat;
     src:
         local('Akrobat'),
         local('Akrobat-Regular'),
@@ -12,8 +12,8 @@ html {
 }
 
 body {
-    font-family: 'Akrobat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
-    font-size: 16px;
+    font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
+    font-size: 1em;
     text-align: center;
     
     /* This is the dark gradient over the BG */
@@ -40,7 +40,7 @@ header {
 /* Transparent black bar at top */
 #logo_bar {
     background: rgba(0, 0, 0, 0.5); 
-    margin-bottom: 140px;
+    margin-bottom: 150px;
     padding-top: 10px;
 }
 
@@ -61,7 +61,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.5);  /* Border transparency */
     border-radius: 8px;
     display: inline-block;
-    margin-bottom: 170px;
+    margin-bottom: 190px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -114,6 +114,7 @@ main {
 }
 
 #latest_button {
+    font-size: 20px;
     border: 1px solid #696969;
     border-radius: 5px;
     padding: 8px;
@@ -126,12 +127,13 @@ main {
     border-radius: 5px;
     padding: 3px 10px;
     font-weight: bold;
+    opacity: 0.6;
 }
 
 #latest p {
     color: slategray;
     font-size: 20px;
-    max-width: 380px;
+    max-width: 390px;
     margin: auto;
 }
 
@@ -161,14 +163,14 @@ main {
 }
 
 #blog_posts {
-    max-height: 800px;
+    max-height: 500px;
     overflow-y: auto;
     padding: 0 20px;
     padding-bottom: 10px;
 }
 
-#featured {
-    margin-top: 40px;
+#lore {
+    margin-top: 60px;
     color: white;
 }
 
@@ -180,6 +182,32 @@ main {
 
 #flex-lore img {
     height: 150px;
+    margin: 10px 10px 0 10px;
+}
+
+#fanart {
+    margin-top: 60px;
+    color: white;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
+}
+
+#flex-fanart {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: silver;
+    margin: auto;
+    margin: 0 15px;
+
+    max-height: 900px;
+    overflow-y: auto;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+#flex-fanart img {
+    height: 250px;
     margin: 10px 10px 0 10px;
 }
 
