@@ -12,8 +12,8 @@ html {
 }
 
 body {
-    font-family: "Akrobat", "Calibri", sans-serif;
-    font-size: 16px;
+    font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
+    font-size: 1em;
     text-align: center;
 
     /* <-- This is the dark gradient over the BG --> */
@@ -77,7 +77,6 @@ nav a:hover {
     color: teal;
 }
 
-
 #socials {
     opacity: 0.4;
     background-color: black;
@@ -97,19 +96,33 @@ main {
     margin: auto;
 }
 
+table {
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
+}
+
 td {
     vertical-align: text-top;
-    padding: 0 10px;
+    padding: 0 20px;
     width:50%;
+    
 }
 
 h1, h2, h3, h4, h5 {
     color: white;
 }
 
+p {
+    color: silver;
+}
+
 #heading {
     font-size: 36px;
     padding-top: 30px;
+}
+
+#both {
+    margin-bottom: 30px;
 }
 
 #about_AC h1{
@@ -126,6 +139,9 @@ p {
 
 #support {
     margin: 60px 0;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
+    padding: 0 20px;
 }
 
 .help {
