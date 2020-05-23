@@ -103,7 +103,7 @@ table {
 
 td {
     vertical-align: text-top;
-    padding: 0 10px;
+    padding: 0 20px;
     width:50%;
     
 }
@@ -137,6 +137,7 @@ p {
     margin: 60px 0;
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
+    padding: 0 20px;
 }
 
 .help {
