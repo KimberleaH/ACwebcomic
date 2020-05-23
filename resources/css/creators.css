@@ -77,7 +77,6 @@ nav a:hover {
     color: teal;
 }
 
-
 #socials {
     opacity: 0.4;
     background-color: black;
@@ -97,14 +96,24 @@ main {
     margin: auto;
 }
 
+table {
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
+}
+
 td {
     vertical-align: text-top;
     padding: 0 10px;
     width:50%;
+    
 }
 
 h1, h2, h3, h4, h5 {
     color: white;
+}
+
+p {
+    color: silver;
 }
 
 #heading {
@@ -126,6 +135,8 @@ p {
 
 #support {
     margin: 60px 0;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
 }
 
 .help {

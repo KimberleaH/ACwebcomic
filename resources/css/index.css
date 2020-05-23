@@ -117,7 +117,15 @@ main {
     border: 1px solid #696969;
     border-radius: 5px;
     padding: 8px;
-    display: inline;
+    width: 130px;
+    margin: auto;
+}
+
+#tapastic {
+    border: 1px solid #767730;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: bold;
 }
 
 #latest p {

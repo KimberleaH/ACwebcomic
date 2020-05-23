@@ -1,0 +1,139 @@
+@font-face { /* Akrobat font */
+    font-family: 'Akrobat';
+    src:
+        local('Akrobat'),
+        local('Akrobat-Regular'),
+        url('/resources/fonts/Akrobat/Akrobat-Regular.ttf');
+    }
+
+html {
+    width: 100%;
+    background-color: black;
+}
+
+body {
+    font-family: "Akrobat", "Calibri", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    /* <-- This is the dark gradient over the BG --> */
+    background:
+    linear-gradient(
+   rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.1)
+   ) ,
+    url('https://i.imgur.com/NnxM5H3.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: inherit;
+}
+
+header {
+    /* Background image code in html */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Transparent black bar at top */
+#logo_bar {
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+}
+
+#logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 8px 0;
+    align-items: center;
+}
+
+nav a {
+    font-weight: bolder;
+    padding: 0 16px;
+    font-size: 20px;
+}
+
+nav a:hover, table a:hover {
+    color: teal;
+}
+
+#socials {
+    opacity: 0.4;
+    background-color: black;
+}
+
+#socials img {
+    height: 20px;
+    padding: 0 4px;
+}
+
+#navbar {
+    background-color: black;
+}
+
+main, table {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h2, h3, th {
+    color: white;
+}
+
+p {
+    color: silver;
+}
+
+table a {
+    color: silver;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td {
+    padding: 0 8px;
+}
+
+#note, #major {
+    padding: 50px 0;
+}
+
+#major h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.storyline {
+    border: 1px solid rgb(39, 37, 37);
+    background-size: cover;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 30px 20px;
+}
+
+footer {
+    color: white;
+    opacity: 0.4;
+    margin-top: 310px; /* Change back to 60px when content gets added */
+    margin-bottom: 10px;
+}
