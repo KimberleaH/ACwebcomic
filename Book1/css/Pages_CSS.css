@@ -73,13 +73,14 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover, a:hover {
+nav a:hover, table a:hover {
     color: teal;
 }
 
 #socials {
     opacity: 0.4;
     background-color: black;
+    padding-bottom: 20px;
 }
 
 #socials img {
@@ -89,6 +90,7 @@ nav a:hover, a:hover {
 
 #navbar {
     background-color: black;
+    z-index: 1;
 }
 
 main {
@@ -109,7 +111,7 @@ p {
     font-size: 20px;
 }
 
-img {
+#image img {
     margin-top: 10px;
     height: 700px;
 }
@@ -119,4 +121,21 @@ footer {
     opacity: 0.4;
     margin-top: 60px; /* Change back to 60px when content gets added */
     margin-bottom: 10px;
+}
+
+/* This keeps the footer at the bottom */
+#page_container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 1rem;    /* Footer height */
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;            /* Footer height */
 }
