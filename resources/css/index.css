@@ -96,6 +96,7 @@ main {
 #socials {
     opacity: 0.4;
     background-color: black;
+    padding-bottom: 20px;
 }
 
 #socials img {
@@ -105,6 +106,7 @@ main {
 
 #navbar {
     background-color: black;
+    z-index: 1;
 }
 
 #latest {
