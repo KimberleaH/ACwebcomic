@@ -98,10 +98,26 @@ main {
     margin: auto;
 }
 
-table {
+#creator_border {
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
 }
+
+#pics {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pics div {
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 100%;
+    background-color:  rgb(24, 24, 24);
+    height: 100px;
+    width: 100px;
+}
+
 
 td {
     vertical-align: text-top;
