@@ -9,7 +9,7 @@ Ancient Chronicles webcomic (ACwebcomic) website
 
 
 ## General Info
-The purpose of this website is to act as an info hub for the webcomic series, Ancient Chronicles. In the future, the webcomic will be hosted directly on the website.
+The purpose of this website is to host the webcomic series, Ancient Chronicles, and act as an info hub for the series. The website will be hosted elsewhere officially in the near future.
 
 Ancient Chronicles © 2007-2020 Kimberlea Heili and Samuel Page
 
@@ -28,6 +28,7 @@ Ko-Fi button was provided by https://Ko-Fi.com
 * Learn more about the comic and its creators
 * View news published by the creators
 * Link to social media websites related to the comic
+* Read the comic on the website
 
 
 ## Technologies
