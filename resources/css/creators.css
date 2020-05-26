@@ -110,10 +110,9 @@ main {
     justify-content: space-around;
 }
 
-#pics div {
+#pics img {
     border: 1px solid rgb(34, 34, 34);
-    border-radius: 100%;
-    background-color:  rgb(24, 24, 24);
+    border-radius: 40%;
     height: 100px;
     width: 100px;
 }
