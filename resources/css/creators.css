@@ -98,39 +98,31 @@ main {
     margin: auto;
 }
 
-#creator_border {
-    border: 1px solid rgb(34, 34, 34);
-    border-radius: 2%;
+#both {
+    margin-bottom: 30px;
 }
 
-#pics {
+#creators {
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
     margin-top: 20px;
+}
+
+#creators_flex {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#pics img {
+#creators img {
     border: 1px solid rgb(34, 34, 34);
     border-radius: 40%;
     height: 100px;
     width: 100px;
 }
 
-table {
-    margin: auto;
-    width: 100%;
-}
-
-td {
-    vertical-align: text-top;
-    padding: 0 20px;
-    width:50%;
-    margin: auto;
-}
-
-tfoot {
-    width: 100%;
+.profile {
+    margin: 20px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -144,10 +136,6 @@ p {
 #heading {
     font-size: 36px;
     margin-top: 40px;
-}
-
-#both {
-    margin-bottom: 30px;
 }
 
 #about_AC h1{
