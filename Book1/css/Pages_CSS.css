@@ -112,8 +112,11 @@ p {
 }
 
 #image img {
-    margin-top: 10px;
     height: 700px;
+}
+
+.back_next {
+    margin: 20px 0;
 }
 
 figcaption {
