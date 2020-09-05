@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     
     /* This is the dark gradient over the BG */
@@ -29,6 +29,9 @@ body {
     background-position: center;
     max-width: inherit;
 }
+
+
+/* HEADER section */
 
 header {
     /* Background image code in html */
@@ -65,6 +68,9 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
+/* NAV section */
+
 a {
     color: white;
     text-decoration: none;
@@ -88,11 +94,6 @@ nav a:hover {
     color: teal;
 }
 
-main {
-    max-width: 600px;
-    margin: auto;
-}
-
 #socials {
     opacity: 0.4;
     background-color: black;
@@ -107,6 +108,14 @@ main {
 #navbar {
     background-color: black;
     border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+
+/* MAIN section */
+
+main {
+    max-width: 500px;
+    margin: auto;
 }
 
 #latest {
@@ -144,10 +153,13 @@ main {
     color: white;
 }
 
+
+/* NEWS section */
+
 #news {
     color: silver;
     margin: auto;
-    margin: 60px 15px;
+    margin: 60px 0;
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
 }
@@ -170,8 +182,25 @@ main {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    #news h3 {
+        font-weight: bold;
+        font-size: 26px;
+        color: white;
+    }
+}
+
+
+/* LORE section */
+
 #lore {
-    margin-top: 60px;
+    margin: 80px 0;
+    color: white;
+}
+
+#lore h3 {
+    font-weight: bold;
+    font-size: 22px;
     color: white;
 }
 
@@ -182,15 +211,37 @@ main {
 }
 
 #flex-lore img {
-    height: 150px;
+    height: 180px;
     margin: 10px 10px 0 10px;
 }
 
+@media screen and (max-width: 650px) {
+    #lore h3 {
+        font-weight: bold;
+        font-size: 26px;
+        color: white;
+    }
+    
+    #flex-lore img {
+        height: 250px;
+    }
+}
+
+
+
+/* FANART section */
+
 #fanart {
-    margin-top: 60px;
+    margin: 80px 0;
     color: white;
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
+}
+
+#fanart h3 {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
 }
 
 #flex-fanart {
@@ -199,7 +250,6 @@ main {
     justify-content: space-around;
     color: silver;
     margin: auto;
-    margin: 0 15px;
 
     max-height: 900px;
     overflow-y: auto;
@@ -211,6 +261,21 @@ main {
     height: 250px;
     margin: 10px 10px 0 10px;
 }
+
+@media screen and (max-width: 600px) {
+    #fanart h3 {
+        font-weight: bold;
+        font-size: 26px;
+        color: white;
+    }
+    
+    #flex-fanart img {
+        height: 300px;
+    }
+}
+
+
+
 
 footer {
     color: white;
