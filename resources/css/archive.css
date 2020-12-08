@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
 
     /* <-- This is the dark gradient over the BG --> */
@@ -59,6 +59,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: teal;
+}
+
+a:focus {
+    outline: 2px solid #00eeff;
+}
+
 nav {
     list-style-type: none;
     display: inline-flex;
@@ -70,15 +78,10 @@ nav {
 nav a {
     font-weight: bolder;
     padding: 0 16px;
-    font-size: 20px;
-}
-
-nav a:hover, table a:hover {
-    color: teal;
+    font-size: 25px;
 }
 
 #socials {
-    opacity: 0.4;
     background-color: black;
     padding-bottom: 8px;
 }
@@ -88,6 +91,17 @@ nav a:hover, table a:hover {
     padding: 0 4px;
 }
 
+/* Animation for opacity change */
+.insta, .face, .twit, .disc {
+    opacity: 0.4;
+}
+.insta:hover, .face:hover, .twit:hover, .disc:hover {
+    opacity: 0.8;
+}
+/* End animation */
+
+
+
 #navbar {
     background-color: black;
     border-bottom: 1px solid rgb(34, 34, 34);
@@ -96,6 +110,7 @@ nav a:hover, table a:hover {
 main, table {
     max-width: 500px;
     margin: 0 auto;
+    font-size: 1em;
 }
 
 h2, h3, th {
@@ -114,6 +129,7 @@ table a {
 
 td {
     padding: 0 8px;
+    font-size: 1.3em;
 }
 
 #note, #major {
@@ -155,5 +171,6 @@ footer {
     position: absolute;
     bottom: 1%;
     width: 100%;
+    font-size: 19px;
     height: 1rem;            /* Footer height */
 }
