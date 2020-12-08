@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: center;
     
     /* This is the dark gradient over the BG */
@@ -76,6 +76,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: teal;
+}
+
+a:focus {
+    outline: 2px solid #00eeff;
+}
+
 nav {
     list-style-type: none;
     display: inline-flex;
@@ -87,15 +95,10 @@ nav {
 nav a {
     font-weight: bolder;
     padding: 0 16px;
-    font-size: 20px;
-}
-
-nav a:hover {
-    color: teal;
+    font-size: 25px;
 }
 
 #socials {
-    opacity: 0.4;
     background-color: black;
     padding-bottom: 8px;
 }
@@ -104,6 +107,16 @@ nav a:hover {
     height: 20px;
     padding: 0 4px;
 }
+
+/* Animation for opacity change */
+.insta, .face, .twit, .disc {
+    opacity: 0.4;
+}
+.insta:hover, .face:hover, .twit:hover, .disc:hover {
+    opacity: 0.8;
+}
+/* End animation */
+
 
 #navbar {
     background-color: black;
@@ -124,7 +137,7 @@ main {
 }
 
 #latest_button {
-    font-size: 20px;
+    font-size: 25px;
     border: 1px solid #696969;
     border-radius: 5px;
     padding: 8px;
@@ -136,13 +149,12 @@ main {
     border-radius: 5px;
     padding: 3px 8px;
     font-weight: bold;
-    opacity: 0.6;
     display: inline-block;
 }
 
 #latest p {
     color: slategray;
-    font-size: 20px;
+    font-size: 25px;
     max-width: 390px;
     margin: auto;
 }
@@ -200,7 +212,7 @@ main {
 
 #lore h3 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
     color: white;
 }
 
@@ -211,20 +223,8 @@ main {
 }
 
 #flex-lore img {
-    height: 180px;
+    height: 250px;
     margin: 10px 10px 0 10px;
-}
-
-@media screen and (max-width: 650px) {
-    #lore h3 {
-        font-weight: bold;
-        font-size: 26px;
-        color: white;
-    }
-    
-    #flex-lore img {
-        height: 250px;
-    }
 }
 
 
@@ -240,7 +240,7 @@ main {
 
 #fanart h3 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
     color: white;
 }
 
@@ -258,20 +258,8 @@ main {
 }
 
 #flex-fanart img {
-    height: 250px;
+    height: 300px;
     margin: 10px 10px 0 10px;
-}
-
-@media screen and (max-width: 600px) {
-    #fanart h3 {
-        font-weight: bold;
-        font-size: 26px;
-        color: white;
-    }
-    
-    #flex-fanart img {
-        height: 300px;
-    }
 }
 
 
@@ -282,4 +270,5 @@ footer {
     opacity: 0.4;
     margin-top: 60px;
     margin-bottom: 10px;
+    font-size: 19px;
 }
