@@ -152,6 +152,10 @@ main {
     display: inline-block;
 }
 
+#tapastic a:hover {
+    color: goldenrod;
+}
+
 #latest p {
     color: slategray;
     font-size: 25px;
