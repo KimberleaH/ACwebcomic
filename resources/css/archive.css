@@ -197,11 +197,14 @@ footer {
     }
 
     #socials img {
-        height: 18px;
         padding: 0 6px;
     }
 
     h2 {
         font-size: 26px;
+    }
+
+    footer {
+        margin-bottom: 20px;
     }
 }
