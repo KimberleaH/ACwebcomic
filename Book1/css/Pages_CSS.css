@@ -173,10 +173,20 @@ footer {
 
     nav {
         max-width: 600px;
-        padding: 2px 4px;
+        padding: 10px 4px;
     }
 
     nav a {
-        font-size: 16px;
+        padding: 10px 6px;
+        font-size: 20px;
+    }
+
+    #socials img {
+        height: 18px;
+        padding: 0 6px;
+    }
+
+    #transcript h2 {
+        font-size: 26px;
     }
 }
