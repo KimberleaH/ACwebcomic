@@ -24,8 +24,8 @@ body {
     ) ,
     url('https://i.imgur.com/NnxM5H3.jpg');
         
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: initial;
+    background-repeat: repeat;
     background-position: center;
     max-width: inherit;
 }
@@ -279,11 +279,17 @@ footer {
 
     nav {
         max-width: 600px;
-        padding: 2px 4px;
+        padding: 10px 4px;
     }
 
     nav a {
-        font-size: 16px;
+        padding: 10px 4px;
+        font-size: 15px;
+    }
+
+    #socials img {
+        height: 18px;
+        padding: 0 6px;
     }
 
     #read_ACwebcomic {
@@ -291,6 +297,10 @@ footer {
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    #tapastic a {
+        font-size: 19px;
     }
 }

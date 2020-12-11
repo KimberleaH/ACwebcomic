@@ -24,8 +24,8 @@ body {
    ) ,
     url('https://i.imgur.com/NnxM5H3.jpg');
     
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: initial;
+    background-repeat: repeat;
     background-position: center;
     max-width: inherit;
 }
