@@ -267,8 +267,7 @@ footer {
 }
 
 
-/* Responsive design queries */
-
+/* Responsive design for screen size 600px and smaller */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 1em;
@@ -280,18 +279,18 @@ footer {
 
     nav {
         max-width: 600px;
-        padding: 2px 0;
+        padding: 2px 4px;
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #read_ACwebcomic {
         font-size: 30px;
     }
 
-    #latest_button {
+    h3 {
         font-size: 20px;
     }
 }

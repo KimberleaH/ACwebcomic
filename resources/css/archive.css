@@ -174,3 +174,24 @@ footer {
     font-size: 19px;
     height: 1rem;            /* Footer height */
 }
+
+
+/* Responsive design for screen size 600px and smaller */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+    #logo {
+        max-width: 380px;
+    }
+
+    nav {
+        max-width: 600px;
+        padding: 2px 4px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
