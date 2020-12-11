@@ -258,9 +258,6 @@ main {
     margin: 10px 10px 0 10px;
 }
 
-
-
-
 footer {
     color: white;
     opacity: 0.4;
@@ -274,7 +271,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #logo {
@@ -286,11 +283,11 @@ footer {
         padding: 2px 0;
     }
 
-/* 
     nav a {
         font-size: 20px;
     }
 
+/* 
     #read_ACwebcomic {
         font-size: 30px;
     }
