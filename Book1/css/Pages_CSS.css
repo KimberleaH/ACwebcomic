@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
 
     /* <-- This is the dark gradient over the BG --> */
@@ -128,7 +128,7 @@ p {
 }
 
 #image img {
-    height: 800px;
+    max-height: 800px;
 }
 
 .back_next {
@@ -146,7 +146,6 @@ p {
     overflow-y: auto;
     padding: 0 20px;
     padding-bottom: 10px;
-    font-size: 1.3em;
 }
 
 #transcript p {
@@ -184,6 +183,14 @@ footer {
     #socials img {
         height: 18px;
         padding: 0 6px;
+    }
+
+    #image img {
+        max-width: 600px;
+    }
+
+    #transcript {
+        margin: 80px 30px;
     }
 
     #transcript h2 {
