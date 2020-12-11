@@ -273,7 +273,19 @@ footer {
 /* Responsive design queries */
 
 @media only screen and (max-width: 600px) {
+    #logo {
+        max-width: 380px;
+    }
+
     nav a {
+        font-size: 14px;
+    }
+
+    #read_ACwebcomic {
+        font-size: 30px;
+    }
+
+    #latest_button {
         font-size: 20px;
     }
 }
