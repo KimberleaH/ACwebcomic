@@ -284,10 +284,9 @@ footer {
     }
 
     nav a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-/* 
     #read_ACwebcomic {
         font-size: 30px;
     }
@@ -295,5 +294,4 @@ footer {
     #latest_button {
         font-size: 20px;
     }
-*/
 }
