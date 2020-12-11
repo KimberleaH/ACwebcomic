@@ -277,6 +277,10 @@ footer {
         max-width: 380px;
     }
 
+    nav {
+        max-width: 600px;
+    }
+
     nav a {
         font-size: 14px;
     }
