@@ -124,7 +124,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .profile {
@@ -158,7 +158,7 @@ p {
 .email {
     font-weight: bold;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #support {
@@ -218,7 +218,7 @@ footer {
     }
 
     #creators_flex {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     footer {
