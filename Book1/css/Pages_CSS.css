@@ -184,6 +184,10 @@ footer {
         padding: 0 6px;
     }
 
+    .back_next a {
+        font-size: 20px;
+    }
+
     #image img {
         max-width: 100%;
         height: auto;

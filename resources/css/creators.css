@@ -111,20 +111,24 @@ main {
     margin: auto;
 }
 
-#both {
-    margin-bottom: 30px;
+.content {
+    margin: 60px 0;
 }
 
 #creators {
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
-    margin-top: 20px;
 }
 
 #creators_flex {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
+    margin: 30px 0;
+}
+
+.profile {
+    margin: 25px 20px;
 }
 
 #creators img {
@@ -132,10 +136,6 @@ main {
     border-radius: 40%;
     height: 100px;
     width: 100px;
-}
-
-.profile {
-    margin: 20px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -151,10 +151,6 @@ p {
     margin-top: 40px;
 }
 
-#about_AC {
-    margin: 60px 0;
-}
-
 p {
     color: silver;
 }
@@ -166,7 +162,6 @@ p {
 }
 
 #support {
-    margin: 60px 0;
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
     padding: 0 20px;
@@ -218,12 +213,12 @@ footer {
         font-size: 22px;
     }
 
-    #support, #creators {
+    .content {
         margin: 60px 15px;
     }
 
-    .profile {
-        margin: 10px;
+    #creators_flex {
+        margin: 20px 0;
     }
 
     footer {
