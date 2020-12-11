@@ -273,17 +273,22 @@ footer {
 /* Responsive design queries */
 
 @media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.1em;
+    }
+
     #logo {
         max-width: 380px;
     }
 
     nav {
         max-width: 600px;
-        padding: 4px 0;
+        padding: 2px 0;
     }
 
+/* 
     nav a {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     #read_ACwebcomic {
@@ -293,4 +298,5 @@ footer {
     #latest_button {
         font-size: 20px;
     }
+*/
 }
