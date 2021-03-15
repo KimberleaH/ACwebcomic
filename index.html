@@ -81,12 +81,6 @@
             not be suitable for everyone. Viewer discretion is advised.</small></em></p>
         </div>
       </section>
-      
-      <!-- Ko-fi button -->
-      <section id="kofi">
-        <!-- Button source code from Ko-Fi.com -->
-        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Keep the Story Going!', '#29abe0', 'A8871181');kofiwidget2.draw();</script> 
-      </section>
 
       <!-- News section -->
       <section id="news">
@@ -148,7 +142,19 @@
     </main>
    
     <footer>
-      All rights reserved &copy; 2007-2020 Kimberlea Heili and Samuel Page
+      All rights reserved &copy; 2007-2021 Kimberlea Heili and Samuel Page
     </footer>
+
+    <!-- Ko Fi Widget -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('acwebcomic', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support us',
+      'floating-chat.donateButton.background-color': '#00b9fe',
+      'floating-chat.donateButton.text-color': '#fff'
+      });
+    </script>
+
   </body>
 </html>
