@@ -107,7 +107,7 @@ nav a {
 }
 
 main {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -129,6 +129,7 @@ main {
 
 .profile {
     margin: 25px 20px;
+    padding: 0 45px;
 }
 
 #creators img {
@@ -164,7 +165,7 @@ p {
 #support {
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
-    padding: 0 20px;
+    padding: 0 55px;
 }
 
 .help {
@@ -219,6 +220,14 @@ footer {
 
     #creators_flex {
         margin: 10px 0;
+    }
+
+    .profile {
+        padding: 0 10px;
+    }
+
+    #support {
+        padding: 0 25px;
     }
 
     footer {
