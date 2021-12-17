@@ -35,6 +35,7 @@ body {
 
 header {
     /* Background image code in html */
+    pointer-events: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,6 +49,8 @@ header {
 }
 
 #logo {
+    /* Background image code in html */
+    pointer-events: none;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
@@ -72,6 +75,7 @@ header {
 /* NAV section */
 
 a {
+    pointer-events: auto;
     color: white;
     text-decoration: none;
 }
@@ -223,9 +227,27 @@ main {
     justify-content: space-around;
 }
 
-#flex-lore img {
-    height: 250px;
-    margin: 10px 10px 0 10px;
+.lore-box {
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 2%;
+    max-width: 350px;
+    margin: 10px;
+}
+
+.lorehead {
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(149, 179, 155);
+    padding: 50px 20px;
+    margin-top: 0;
+}
+
+.lore-box p {
+    padding: 0 10px;
+}
+
+.lorehead p {
+    font-weight: bold;
 }
 
 
@@ -318,6 +340,10 @@ footer {
 
     #blog_posts {
         padding: 0 20px;
+    }
+
+    .lore-box {
+        width: 350px;
     }
 
     footer {

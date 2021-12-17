@@ -32,6 +32,7 @@ body {
 
 header {
     /* Background image code in html */
+    pointer-events: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,6 +45,8 @@ header {
 }
 
 #logo {
+    /* Background image code in html */
+    pointer-events: none;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
@@ -55,6 +58,7 @@ header {
 }
 
 a {
+    pointer-events: auto;
     color: white;
     text-decoration: none;
 }
@@ -128,6 +132,7 @@ p {
 }
 
 #image img {
+    pointer-events: none;
     max-height: 800px;
 }
 
