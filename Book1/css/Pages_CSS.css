@@ -89,6 +89,19 @@ nav a:hover, table a:hover {
     color: teal;
 }
 
+.skip-to-content {
+    right: 70%;
+    position: absolute;
+    transform: translateY(60%);
+    opacity: 0%;
+    z-index: -1;
+}
+
+.skip-to-content:focus {
+    z-index: 0;
+    opacity: 100%;
+}
+
 #socials {
     background-color: black;
     padding-bottom: 8px;
@@ -183,6 +196,19 @@ footer {
     nav a {
         padding: 10px 10px;
         font-size: 20px;
+    }
+
+    .skip-to-content {
+        right: 70%;
+        position: absolute;
+        transform: translateY(60%);
+        opacity: 0%;
+        z-index: -1;
+    }
+    
+    .skip-to-content:focus {
+        z-index: 0;
+        opacity: 100%;
     }
 
     #socials img {
