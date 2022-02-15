@@ -82,7 +82,7 @@ nav {
 nav a {
     font-weight: bolder;
     padding: 0 16px;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .skip-to-content {
@@ -105,7 +105,7 @@ nav a {
 
 #socials img {
     height: 20px;
-    padding: 0 4px;
+    padding: 0 6px;
 }
 
 /* Animation for opacity change */
@@ -128,8 +128,18 @@ main {
     margin: auto;
 }
 
+p {
+    line-height: 30px; 
+    word-spacing: 1px;
+    color: #9aa0a7;
+}
+
 .content {
     margin: 60px 0;
+}
+
+#about_AC {
+    padding: 20px 0;
 }
 
 #creators {
@@ -157,11 +167,8 @@ main {
 }
 
 h1, h2, h3, h4, h5 {
+    letter-spacing: .5px;
     color: white;
-}
-
-p {
-    color: silver;
 }
 
 .heading {
@@ -169,32 +176,30 @@ p {
     margin-top: 40px;
 }
 
-p {
-    color: silver;
-}
-
 .email {
     font-weight: bold;
-    color: white;
+    color: #9aa0a7;
     padding-bottom: 30px;
 }
 
 #support {
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
-    padding: 0 55px;
+    padding: 10px 55px;
 }
 
-.help {
+#support h4 {
     font-weight: bold;
     color: steelblue;
 }
 
-#kofiframe {
-    border: none;
-    width: 80%;
-    background: #000;
-    height: 750;
+.help {
+    margin-top: 60px;
+}
+
+.help img {
+    width: 100%;
+    max-width: 400px;
 }
 
 footer {
@@ -209,8 +214,13 @@ footer {
 /* Responsive design for screen size 600px and smaller */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 1.2em;
     }
+
+   /* p {
+        line-height: 28px;
+        word-spacing: 1px;
+    } */
 
     #logo {
         max-width: 380px;
@@ -221,9 +231,10 @@ footer {
         padding: 10px 4px;
     }
 
+
     nav a {
         padding: 10px 10px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .skip-to-content {
@@ -237,10 +248,6 @@ footer {
     .skip-to-content:focus {
         z-index: 0;
         opacity: 100%;
-    }
-
-    #socials img {
-        padding: 0 6px;
     }
 
     .heading {
@@ -261,11 +268,6 @@ footer {
 
     .profile {
         padding: 0 10px;
-    }
-
-    #kofiframe {
-        width: 100%;
-
     }
 
     #support {

@@ -82,7 +82,7 @@ nav {
 nav a {
     font-weight: bolder;
     padding: 0 16px;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .skip-to-content {
@@ -105,7 +105,7 @@ nav a {
 
 #socials img {
     height: 20px;
-    padding: 0 4px;
+    padding: 0 6px;
 }
 
 /* Animation for opacity change */
@@ -130,12 +130,15 @@ main, table {
     font-size: 1em;
 }
 
-h2, h3, th {
-    color: white;
+p {
+    line-height: 30px; 
+    word-spacing: 1px;
+    color: #9aa0a7;
 }
 
-p {
-    color: silver;
+h1, h2, h3, h4, h5, th {
+    letter-spacing: .5px;
+    color: white;
 }
 
 table a {
@@ -196,7 +199,12 @@ footer {
 /* Responsive design for screen size 600px and smaller */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+
+    p {
+        line-height: 28px;
+        word-spacing: 1px;
     }
 
     #logo {
@@ -210,7 +218,7 @@ footer {
 
     nav a {
         padding: 10px 10px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .skip-to-content {
@@ -224,10 +232,6 @@ footer {
     .skip-to-content:focus {
         z-index: 0;
         opacity: 100%;
-    }
-
-    #socials img {
-        padding: 0 6px;
     }
 
     h2 {

@@ -67,7 +67,7 @@ a:hover {
     color: teal;
 }
 
-a:focus {
+a:focus, #transcript:focus {
     outline: 2px solid #00eeff;
 }
 
@@ -82,11 +82,7 @@ nav {
 nav a {
     font-weight: bolder;
     padding: 0 16px;
-    font-size: 25px;
-}
-
-nav a:hover, table a:hover {
-    color: teal;
+    font-size: 26px;
 }
 
 .skip-to-content {
@@ -109,7 +105,7 @@ nav a:hover, table a:hover {
 
 #socials img {
     height: 20px;
-    padding: 0 4px;
+    padding: 0 6px;
 }
 
 /* Animation for opacity change */
@@ -129,10 +125,23 @@ nav a:hover, table a:hover {
 main {
     max-width: 500px;
     margin: 0 auto;
+    font-size: 1em;
 }
 
 p {
-    color: silver;
+    line-height: 30px; 
+    word-spacing: 1px;
+    color: #9aa0a7;
+}
+
+h1, h2, h3 {
+    letter-spacing: .5px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
 }
 
 #image {
@@ -181,7 +190,12 @@ footer {
 /* Responsive design for screen size 600px and smaller */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+
+    p {
+        line-height: 28px;
+        word-spacing: 1px;
     }
 
     #logo {
@@ -195,7 +209,7 @@ footer {
 
     nav a {
         padding: 10px 10px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .skip-to-content {

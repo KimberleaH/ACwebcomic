@@ -62,7 +62,8 @@ header {
 }
 
 #read_ACwebcomic {
-    font-size: 36px;
+    font-size: 40px;
+    letter-spacing: .5px;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);  /* Border transparency */
     border-radius: 8px;
@@ -84,7 +85,7 @@ a:hover {
     color: teal;
 }
 
-a:focus {
+a:focus, #blog_posts:focus {
     outline: 2px solid #00eeff;
 }
 
@@ -99,7 +100,7 @@ nav {
 nav a {
     font-weight: bolder;
     padding: 0 16px;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 .skip-to-content {
@@ -122,7 +123,7 @@ nav a {
 
 #socials img {
     height: 20px;
-    padding: 0 4px;
+    padding: 0 6px;
 }
 
 /* Animation for opacity change */
@@ -148,9 +149,27 @@ main {
     margin: auto;
 }
 
+p {
+    line-height: 30px; 
+    word-spacing: 1px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    letter-spacing: .5px;
+}
+
+
 #latest {
+    margin-top: 15px;
+}
+
+#latest h3 {
     color: steelblue;
     margin-top: 20px;
+    font-size: 26px;
 }
 
 #latest_button {
@@ -179,7 +198,8 @@ main {
 
 #latest p {
     color: slategray;
-    font-size: 25px;
+    font-size: 21px;
+    line-height: 32px;
     max-width: 390px;
     margin: auto;
 }
@@ -194,16 +214,15 @@ main {
 /* NEWS section */
 
 #news {
-    color: silver;
+    color: #9aa0a7;
     margin: auto;
-    margin: 60px 0;
+    margin-top: 80px;
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
 }
 
-#news h3 {
-    font-weight: bold;
-    font-size: 25px;
+
+#news h4 {
     color: white;
 }
 
@@ -224,13 +243,8 @@ main {
 /* LORE section */
 
 #lore {
-    margin: 80px 0;
-    color: white;
-}
-
-#lore h3 {
-    font-weight: bold;
-    font-size: 25px;
+    padding: 40px 0;
+    margin: 60px 0;
     color: white;
 }
 
@@ -268,16 +282,11 @@ main {
 /* FANART section */
 
 #fanart {
+    padding-bottom: 20px;
     margin: 80px 0;
     color: white;
     border: 1px solid rgb(34, 34, 34);
     border-radius: 2%;
-}
-
-#fanart h3 {
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
 }
 
 #flex-fanart {
@@ -310,7 +319,12 @@ footer {
 /* Responsive design for screen size 600px and smaller */
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+
+    p {
+        line-height: 28px;
+        word-spacing: 1px;
     }
 
     #logo {
@@ -324,7 +338,7 @@ footer {
 
     nav a {
         padding: 10px 10px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .skip-to-content {
@@ -340,20 +354,16 @@ footer {
         opacity: 100%;
     }
 
-    #socials img {
-        padding: 0 6px;
-    }
-
     #read_ACwebcomic {
-        font-size: 30px;
+        font-size: 36px;
     }
 
-    #latest h3, #news h3, #fanart h3, #lore h3 {
-        font-size: 22px;
+    h3 {
+        font-size: 28px;
     }
 
     #tapastic a {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     #news, #fanart {
