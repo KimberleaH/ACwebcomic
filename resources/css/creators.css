@@ -19,7 +19,7 @@ html, body {
     scrollbar-color: teal rgb(8, 8, 8);
 }
 
-body {
+html {
     font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     text-align: center;
@@ -121,6 +121,7 @@ nav a {
     transform: translateY(90%);
     opacity: 0%;
     z-index: -1;
+    letter-spacing: .4px;
 }
 
 .skip-to-content:focus {
@@ -160,6 +161,7 @@ main {
     margin: 0 auto;
     max-width: 1000px;
     color: #9aa0a7;
+    letter-spacing: .4px;
 }
 
 .margin-top {
@@ -169,6 +171,7 @@ main {
 .heading {
     color: white;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .flex {
@@ -294,10 +297,13 @@ main {
 /*------------ FOOTER section ------------*/
 
 footer {
-    color: gray;
+    color: #9aa0a7;
     font-size: .8em;
     margin-top: 100px;
+    margin-bottom: 5px;
     opacity: 40%;
+    width: 100%;
+    letter-spacing: .4px;
 }
 
 
