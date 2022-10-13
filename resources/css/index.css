@@ -6,107 +6,152 @@
         url('/resources/fonts/Akrobat/Akrobat-Regular.ttf');
     }
 
-html {
+* {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background-color: black;
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: teal rgb(8, 8, 8);
 }
 
 body {
     font-family: Akrobat, Calibri, Arial, Helvetica, sans-serif;
     font-size: 1.3em;
     text-align: center;
-    
-    /* This is the dark gradient over the BG */
+    color: rgb(199, 199, 199);
     background:
     linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.1)
-    ) ,
-    url('https://i.imgur.com/NnxM5H3.jpg');
-        
-    background-size: initial;
+        rgba(0, 0, 0, .3),
+        rgba(0, 0, 0, .3)),
+        url('../images/Simple_BG.jpg');
     background-repeat: repeat;
     background-position: center;
-    max-width: inherit;
+
 }
 
+/* Scrollbar styling */
 
-/* HEADER section */
-
-header {
-    /* Background image code in html */
-    pointer-events: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+::-webkit-scrollbar {
+    width: .45em;
 }
 
-/* Transparent black bar at top */
-#logo_bar {
-    background: rgba(0, 0, 0, 0.5); 
-    margin-bottom: 150px;
-    padding-top: 10px;
+::-webkit-scrollbar-thumb {
+    background-color: teal;
+    border-radius: 5px;
 }
 
-#logo {
-    /* Background image code in html */
-    pointer-events: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-    height: auto;
-    max-width: 420px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto;
+body::-webkit-scrollbar-track {
+    background-color: black;
 }
 
-#read_ACwebcomic {
-    font-size: 40px;
-    letter-spacing: .5px;
-    padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5);  /* Border transparency */
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 190px;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-
-/* NAV section */
 
 a {
-    pointer-events: auto;
     color: white;
     text-decoration: none;
 }
 
 a:hover {
-    color: teal;
+    color: #00b8b8;
 }
 
-a:focus, #blog_posts:focus {
+a:focus {
+    color: #00b8b8;
     outline: 2px solid #00eeff;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+/*------------ HEADER section ------------*/
+
+header {
+    position: relative;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, .2),
+        rgba(0, 0, 0, 0)),
+        url('../images/Aranite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.logo-bar {
+    height: 45px;
+    padding: 20px 30px;
+}
+
+.logo {
+    background-image: url('../images/AC_LOGO_2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+.read-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.start-reading {
+    font-size: 1.5em;
+    width: 600px;
+    padding: 20px 0;
+    border-radius: 6px; 
+    background: linear-gradient(to right,  
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0) 100%);
+}
+
+.start-reading:hover, .start-reading:focus {
+    background: linear-gradient(to right,  
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 50%,
+        rgba(0, 0, 0, 0) 100%);
+}
+
+
+
+
+
+/*------------ NAV section ------------*/
+
+
+#navbar {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
 }
 
 nav {
-    list-style-type: none;
-    display: inline-flex;
-    margin: 0 auto;
-    padding: 8px 0;
-    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 15px;
 }
 
 nav a {
-    font-weight: bolder;
-    padding: 0 16px;
-    font-size: 26px;
+    margin: 0 15px;
 }
 
 .skip-to-content {
     right: 70%;
     position: absolute;
-    transform: translateY(60%);
+    transform: translateY(90%);
     opacity: 0%;
     z-index: -1;
 }
@@ -117,272 +162,364 @@ nav a {
 }
 
 #socials {
-    background-color: black;
-    padding-bottom: 8px;
+    padding: 10px 0;
+    margin-top: 10px;
 }
 
-#socials img {
+.icon {
+    margin: 0 8px;
+}
+
+.icon img{
     height: 20px;
-    padding: 0 6px;
+    opacity: 50%;
 }
 
-/* Animation for opacity change */
-.insta, .face, .twit, .disc {
-    opacity: 0.4;
-}
-.insta:hover, .face:hover, .twit:hover, .disc:hover {
-    opacity: 0.8;
-}
-/* End animation */
-
-
-#navbar {
-    background-color: black;
-    border-bottom: 1px solid rgb(34, 34, 34);
+.icon img:hover {
+    opacity: 80%;
 }
 
 
-/* MAIN section */
+/*------------ MAIN section ------------*/
 
 main {
-    max-width: 800px;
-    margin: auto;
+    line-height: 1.5em;
+    padding: 0 20px;
 }
-
-p {
-    line-height: 30px; 
-    word-spacing: 1px;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 28px;
-    color: white;
-    letter-spacing: .5px;
-}
-
 
 #latest {
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 80px;
 }
 
-#latest h3 {
-    color: steelblue;
-    margin-top: 20px;
-    font-size: 26px;
+.bttn {
+    font-size: 1.25em;
+    border-radius: 4px;
+    width: 300px;
+    padding: 10px 0;
+    margin: 0 10px;
 }
 
-#latest_button {
-    font-size: 25px;
-    border: 1px solid #696969;
-    border-radius: 5px;
-    padding: 8px;
-    display: inline-block;
+.latest-bttn {
+    background: linear-gradient(to right,  
+        rgba(0, 0, 0, 0) 0%,
+        rgba(29, 80, 122, 0.4) 50%,
+        rgba(0, 0, 0, 0) 100%);
 }
 
-#announcement {
-    padding-top: 18px;
+.latest-bttn:hover {
+    background: linear-gradient(to right,  
+        rgba(0, 0, 0, 0) 0%,
+        rgba(29, 80, 122, 0.6) 50%,
+        rgba(0, 0, 0, 0) 100%);
 }
 
-#tapastic {
-    border: 1px solid #767730;
-    border-radius: 5px;
-    padding: 3px 8px;
-    font-weight: bold;
-    display: inline-block;
+.tapas-bttn {
+    background: linear-gradient(to right,  
+        rgba(0, 0, 0, 0) 0%,
+        rgb(118, 119, 48, .4) 50%,
+        rgba(0, 0, 0, 0) 100%);
 }
 
-#tapastic a:hover {
+.tapas-bttn:hover {
     color: goldenrod;
+    background: linear-gradient(to right,  
+        rgba(0, 0, 0, 0) 0%,
+        rgb(118, 119, 48, .6) 50%,
+        rgba(0, 0, 0, 0) 100%);
 }
 
-#latest p {
+.will-return {
+    color: steelblue;
+    margin-bottom: 20px;
+}
+
+.discretion {
     color: slategray;
-    font-size: 21px;
-    line-height: 32px;
-    max-width: 390px;
-    margin: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-#kofi {
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+
+
+
+/*------------ NEWS section ------------*/
+
+#news-lore-main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#news-lore-main h3, #fanart h3 {
+    font-size: 1.4em;
     color: white;
 }
-
-
-/* NEWS section */
 
 #news {
+    width: 50%;
     color: #9aa0a7;
-    margin: auto;
-    margin-top: 80px;
-    border: 1px solid rgb(34, 34, 34);
-    border-radius: 2%;
+    border: 1px solid #292929;
+    border-radius: 15px;
+    padding: 35px;
+    max-height: 780px;
 }
 
-
-#news h4 {
-    color: white;
+.blog-posts {
+    margin-top: 50px;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    padding: 0 20px;
 }
 
-#news h5 {
-    font-weight: bold;
+h4 {
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+h5 {
     color: steelblue;
-    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-#blog_posts {
-    max-height: 500px;
-    overflow-y: auto;
-    padding: 0 50px;
-    padding-bottom: 10px;
+.post2 {
+    margin: 60px 0;
 }
 
 
-/* LORE section */
+
+
+
+
+/*------------ LORE section ------------*/
 
 #lore {
-    padding: 40px 0;
-    margin: 60px 0;
-    color: white;
+    width: 50%;
+    padding: 35px;
 }
 
 #flex-lore {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    margin-top: 40px;
 }
 
 .lore-box {
-    border: 1px solid rgb(34, 34, 34);
-    border-radius: 2%;
-    max-width: 350px;
-    margin: 10px;
+    margin: 20px;
+    width: 100%;
+    border: 1px solid #292929;
+    border-radius: 10px;
 }
 
-.lorehead {
-    background-position: center;
+.lore-box a {
+    color: #9aa0a7;
+}
+
+.lore-box:hover {
+    border-color: #00b8b8;
+}
+
+.lore-head {
+    background-image: url('../images/Grotto_LowRez.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(149, 179, 155);
-    padding: 50px 20px;
-    margin-top: 0;
+    background-position: bottom;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
 }
 
-.lore-box p {
-    padding: 0 10px;
+.title {
+    color: lightgray;
+    margin-top: 20px;
 }
 
-.lorehead p {
-    font-weight: bold;
+.blurb {
+    margin: 10px 10px 20px;
 }
 
 
 
-/* FANART section */
+
+
+/*------------ FANART section ------------*/
 
 #fanart {
-    padding-bottom: 20px;
-    margin: 80px 0;
-    color: white;
-    border: 1px solid rgb(34, 34, 34);
-    border-radius: 2%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 #flex-fanart {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    color: silver;
-    margin: auto;
-
-    max-height: 900px;
-    overflow-y: auto;
-    padding: 0 20px;
-    padding-bottom: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+    max-height: 1600px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
 }
 
-#flex-fanart img {
-    height: 300px;
-    margin: 10px 10px 0 10px;
+figure img {
+    max-height: 350px;
+    width: 100%;
 }
+
+figcaption {
+    color: gray;
+}
+
+
+
+
+
+/*------------ FOOTER section ------------*/
 
 footer {
-    color: white;
-    opacity: 0.4;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    font-size: 19px;
+    font-size: .8em;
+    margin-top: 100px;
+    opacity: 40%;
+    width: 100%;
 }
 
 
-/* Responsive design for screen size 600px and smaller */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 1.2em;
-    }
 
-    p {
-        line-height: 28px;
-        word-spacing: 1px;
-    }
 
-    #logo {
-        max-width: 380px;
-    }
 
-    nav {
-        max-width: 600px;
-        padding: 10px 4px;
-    }
 
-    nav a {
-        padding: 10px 10px;
-        font-size: 22px;
-    }
 
-    .skip-to-content {
-        right: 70%;
-        position: absolute;
-        transform: translateY(60%);
-        opacity: 0%;
-        z-index: -1;
-    }
-    
-    .skip-to-content:focus {
-        z-index: 0;
-        opacity: 100%;
-    }
 
-    #read_ACwebcomic {
-        font-size: 36px;
-    }
 
-    h3 {
-        font-size: 28px;
-    }
 
-    #tapastic a {
-        font-size: 20px;
-    }
 
-    #news, #fanart {
-        margin: 60px 15px;
-    }
+/*------------ RESPONSIVE QUERIES ------------*/
 
-    #news h5 {
-        font-size: 16px;
-    }
 
-    #blog_posts {
-        padding: 0 20px;
-    }
+@media screen and (max-width: 768px) { /* --- Tablets --- */
 
-    .lore-box {
-        width: 350px;
-    }
+/*------------ HEADER section ------------*/
 
-    footer {
-        margin-bottom: 20px;
-    }
+header {
+    height: 900px;
+}
+
+.logo-bar {
+    height: 40px;
+}
+
+.start-reading {
+    font-size: 1.3em;
+}
+
+
+/*------------ MAIN section ------------*/
+
+.bttn {
+    font-size: 1.1em;
+}
+
+
+
+/*------------ NEWS section ------------*/
+
+#news-lore-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border: none;
+}
+
+#news-lore-main h3, #fanart h3 {
+    font-size: 1.3em;
+    color: white;
+}
+
+#news {
+    width: 100%;
+    padding: 35px 10px 50px;
+}
+
+
+
+
+/*------------ LORE section ------------*/
+
+#lore {
+    width: 100%;
+    padding: 35px 10px 50px;
+    margin-top: 80px;
+}
+
+
+
+
+/*------------ FANART section ------------*/
+
+#fanart {
+    padding-top: 80px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 479px) { /* --- Mobile Devices --- */
+
+/*------------ HEADER section ------------*/
+
+header {
+    background-position: 40% 0%;
+    height: 800px;
+}
+
+.logo-bar {
+    height: 35px;
+}
+
+
+.start-reading {
+    font-size: 1.2em;
+}
+
+
+/*------------ NAV section ------------*/
+
+nav {
+    font-size: 1.1em;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+
+
+/*------------ MAIN section ------------*/
+
+.bttn {
+    font-size: 1em;
+}
+
+
+
+.will-return {
+    font-size: 1.1em;
+}
+
 }
