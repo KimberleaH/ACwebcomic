@@ -1,0 +1,27 @@
+Black - #000000
+Black 50% - rgba(0,0,0,.5)
+Black 25% - rgba(0,0,0,.25)
+White - #ffffff
+White 50% - rgba(255,255,255,.5)
+Chaos Blue - #2595ff
+Baby Blue - #6ab2f2
+Dusty Blue - #4682b4
+Teal - #00b784
+Dark Teal - #007b7b
+Order Orange - #ffa825
+Dark Orange - #cc7a00
+Burnt Umber 10% rgba(122,75,0,0.1)
+Dry Dirt - #827565
+Dust - #b2aea4
+Steel - #708090
+Steel 10% - rgba(112,128,144,0.1)
+Silver - #9aa0a7
+Dark Silver - #666666
+Dark Steel - #2f383f
+
+
+
+
+
+
+Ko-fi button color: #00b9fe

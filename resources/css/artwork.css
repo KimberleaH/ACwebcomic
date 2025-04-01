@@ -1,0 +1,256 @@
+
+#mobile {
+    display: none;
+}
+
+main {
+    padding: 120px 0;
+}
+
+
+.back {
+    margin-left: 15%;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.back a {
+    color: #ffa825;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+.artwork {
+    margin: 80px 0;
+}
+
+.featured-artwork img {
+    margin: 40px 0;
+    max-width: 80%;
+    max-height: 1080px;
+}
+
+.related-artwork img {
+    margin: 40px 0;
+    max-width: 80%;
+    max-height: 900px;
+}
+
+
+.details {
+    background-color: rgba(112,128,144,0.1);
+    border: 1px solid #708090;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 120px;
+    padding: 30px;
+}
+
+
+h1 {
+    font-family: Akrobat;
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-family: Akrobat;
+    font-weight: 400;
+    color: #6ab2f2;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+
+.date {
+    color: #b2aea4;
+    font-size: 14px;
+}
+
+.author-notes {
+    color: #9aa0a7;
+    margin-top: 40px;
+    
+}
+
+.author-notes p {
+    margin-bottom: 10px;
+}
+
+
+iframe {
+    width: 640px;
+    height: 360px;
+}
+
+.deco-heading {
+    display: flex;
+    align-items: center;
+    margin: 120px 3% 20px;
+}
+
+
+.deco-heading h3 {
+    font-family: Akrobat;
+    font-weight: 400;
+    margin: 0 20px;
+    color: white;
+    font-size: 32px;
+}
+
+.deco {
+    flex-grow: 1;
+    height: 0px;
+    border-top: 1px solid #4682b4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- RESPONSIVE STYLING --------------- */
+/* ---------------------------------------------- */
+
+
+
+ 
+/* ---- Responsive Styles Tablet And Below ---- */
+@media all and (max-width: 980px) {
+    
+    main {
+        padding: 100px 0;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+
+    main {
+        padding: 80px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+
+
+
+
+}
+ 
+
+
+
+
+
+
+
+/*** Responsive Styles Narrowing Footer ***/
+@media all and (max-width: 650px) {
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 380px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
